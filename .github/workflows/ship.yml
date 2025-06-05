@@ -1,0 +1,42 @@
+name: run ship and deploy to Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: macos-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+        with:
+          path: 'src/'
+      - name: configure Pages
+        uses: actions/configure-pages@v5
+      - name: run ship
+        run: | 
+          curl https://codeberg.org/djscythe/ship/releases/download/0.1.0/ship-aarch64-apple-darwin -o ship
+          chmod +x ship
+          cd src/
+          ../ship
+      - name: upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'src/target/'
+      - name: deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
