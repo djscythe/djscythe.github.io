@@ -19,24 +19,22 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     steps:
       - name: checkout repository
         uses: actions/checkout@v4
         with:
-          path: 'src/'
+          path: "src/"
       - name: configure Pages
         uses: actions/configure-pages@v5
       - name: run ship
-        run: | 
-          curl https://codeberg.org/djscythe/ship/releases/download/0.1.0/ship-aarch64-apple-darwin -o ship
-          chmod +x ship
-          cd src/
-          ../ship
+        run: |
+          curl https://codeberg.org/djscythe/ship/releases/download/1.0.0/ship-x86_64-unknown-linux-gnu.tar.gz | tar -xz
+          ./ship-x86_64-unknown-linux-gnu/ship -C src/
       - name: upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'src/target/'
+          path: "src/target/"
       - name: deploy to Pages
         id: deployment
         uses: actions/deploy-pages@v4
