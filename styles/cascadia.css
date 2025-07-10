@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "CascadiaCodeNF";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts/cascadia/CascadiaCodeNF-ExtraLight.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "CascadiaCodeNF";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts/cascadia/CascadiaCodeNF-ExtraLightItalic.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "CascadiaCodeNF";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/fonts/cascadia/CascadiaCodeNF-Light.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "CascadiaCodeNF";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/fonts/cascadia/CascadiaCodeNF-LightItalic.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "CascadiaCodeNF";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/cascadia/CascadiaCodeNF-SemiLight.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "CascadiaCodeNF";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/cascadia/CascadiaCodeNF-SemiLightItalic.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "CascadiaCodeNF";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/cascadia/CascadiaCodeNF-Regular.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "CascadiaCodeNF";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/cascadia/CascadiaCodeNF-Italic.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "CascadiaCodeNF";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/cascadia/CascadiaCodeNF-SemiBold.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "CascadiaCodeNF";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/cascadia/CascadiaCodeNF-SemiBoldItalic.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "CascadiaCodeNF";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/cascadia/CascadiaCodeNF-Bold.woff2) format(woff2);
+}
+
+@font-face {
+  font-family: "CascadiaCodeNF";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/cascadia/CascadiaCodeNF-BoldItalic.woff2) format(woff2);
+}
+
+@font-feature-values CascadiaCodeNF {
+  @styleset {
+    ss01: 1;
+    ss02: 2;
+    ss03: 3;
+    ss19: 19;
+    ss19: 20;
+    stylistic-alternates: 1; /* Stylistic alternates (italic only) */
+    alternate-zero: 2; /* Alternate not equal */
+    serbian-locl-forms: 3; /* Serbian locl forms (Italic only) */
+    slashed-zero: 19; /* Slashed zero */
+    graphical-control-characters: 20; /* Graphical control characters */
+  }
+}

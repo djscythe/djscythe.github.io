@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <!--#include virtual="/includes/head.html" -->
+    <link rel="me" href="https://pawb.fun/@djscythe" />
+    <title>sitemap</title>
+  </head>
+  <body>
+    <!--#include virtual="/includes/header.html" -->
+
+    <main>
+      <h1>sitemap</h1>
+
+      <p>no pages thusfar.</p>
+    </main>
+
+    <!--#include virtual="/includes/footer.html" -->
+  </body>
+</html>

@@ -9,18 +9,9 @@
     <!--#include virtual="/includes/header.html" -->
 
     <main>
-      <h1>hi, i'm sam</h1>
+      <h1>blog</h1>
 
-      <p>
-        i am a <strong>music producer</strong> and
-        <strong>audio engineer</strong> from the North of England.
-      </p>
-
-      <p>
-        this site is designed to hold some of my thoughts on various topics, as
-        well as to serve as a portfolio of several projects that i have worked
-        on.
-      </p>
+      <p>no articles.</p>
     </main>
 
     <!--#include virtual="/includes/footer.html" -->

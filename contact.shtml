@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <!--#include virtual="/includes/head.html" -->
+    <title>contact | djscythe</title>
+  </head>
+  <body>
+    <!--#include virtual="/includes/header.html" -->
+
+    <main>
+      <h1>contact</h1>
+
+      <p>here are some of the best ways to get in touch with me:</p>
+
+      <address>
+        <dl>
+          <dt>email</dt>
+          <dd>
+            <a href="mailto:me@samskeo.ch">me@samskeo.ch</a>
+          </dd>
+          <dt>Fediverse</dt>
+          <dd>
+            <a href=https://pawb.fun/@djscythe">@djscythe@pawb.fun</a>
+          </dd>
+          <dt>Codeberg</dt>
+          <dd>
+            <a href=https://github.com/djscythe">djscythe</a>
+          </dd>
+          <dt>GitHub</dt>
+          <dd>
+            <a href=https://codeberg.org/djscythe">djscythe</a>
+          </dd>
+        </dl>
+      </address>
+    </main>
+
+    <!--#include virtual="/includes/footer.html" -->
+  </body>
+</html>
