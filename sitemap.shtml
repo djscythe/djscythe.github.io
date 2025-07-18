@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-GB-oxendict">
   <head>
     <!--#include virtual="/includes/head.html" -->
-    <link rel="me" href="https://pawb.fun/@djscythe" />
-    <title>sitemap</title>
+    <title>sitemap | djscythe</title>
   </head>
   <body>
     <!--#include virtual="/includes/header.html" -->
@@ -11,7 +10,35 @@
     <main>
       <h1>sitemap</h1>
 
-      <p>no pages thusfar.</p>
+      <p>
+        here lies an indexed list of every page on this site (or does it?). i
+        try to keep this as accurate and in as logical an order as is possible,
+        though please note that this page is manually curated so some omissions
+        or inaccuracies may be possible. any and all errors should be reported
+        to the webmaster (me!) via the <a href="/contact">contact</a> page.
+      </p>
+
+      <ul>
+        <li><a href="/about">about</a></li>
+        <li>
+          <a href="/blog">blog</a> /
+          <ul>
+            <li>
+              2025 /
+              <ul>
+                <li>
+                  <a href="/blog/2025/future-is-a-monad"
+                    ><code>Future</code> is a monad</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="/contact">contact</a></li>
+        <li><a href="/">home</a></li>
+        <li><a href="/portfolio">portfolio</a> /</li>
+      </ul>
     </main>
 
     <!--#include virtual="/includes/footer.html" -->

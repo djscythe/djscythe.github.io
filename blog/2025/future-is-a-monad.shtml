@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-GB-oxendict">
+  <head>
+    <!--#include virtual="/includes/head.html" -->
+    <title>Future is a monad | djscythe's blog</title>
+  </head>
+  <body>
+    <!--#include virtual="/includes/header.html" -->
+
+    <main>
+      <h1><code>Future</code> is a monad</h1>
+
+      <div id="blog-subtitle-container">
+        <time id="blog-subtitle-left" datetime="2025-08-30">2025-08-30</time>
+
+        <time id="blog-subtitle-right" datetime="PT15M">15 minute read</time>
+      </div>
+
+      <p>
+        monads are ubiquitous in functional programming languages, as they
+        provide a convenient way of representing the concept of computation
+        itself within the language’s type system. no less so is this true of
+        Rust, which, despite not being purely functional itself, takes many
+        cues from such languages, especially where the type system is
+        concerned. whenever monads are brought up in the context of Rust, there
+        are two usual suspects given as examples: <code>Option</code> and
+        <code>Result</code>. this is most likely because, out of the many types
+        in Rust with monadic properties, these two are the most commonly used;
+        however, i am going to argue that there is another very frequently-seen
+        type, which behaves even closer to the way monads are used in
+        purely-functional languages such as Haskell: <code>Future</code>.
+      </p>
+      <h2>future past</h2>
+      <p>
+        <code>Future</code> is pervasive in async Rust: it is the return type
+        of all async functions, and every block marked with
+        <code>async</code> evaluates to a <code>Future</code> as well. just as
+        <code>Option&lt;T&gt;</code> represents a value of type
+        <code>T</code> which may or may not be there,
+        <code>Future&lt;T&gt;</code> represents a value of type
+        <code>T</code> which may or may not be ready yet, but will be at some
+        point in the future (hence its name). but for something so omnipresent,
+        it hides a lot of weirdness. for starters, it isn’t actually a
+        (concrete) type at all: every single future has a completely unique,
+        unnameable type. these types are unified by the
+        <code>Future</code> trait, which (thanks to features like
+        <a
+          href="https://rust-lang.github.io/impl-trait-initiative/explainer.html"
+          >the <code>impl Trait</code> syntax</a
+        >) allows us to think of them in broad strokes as though they are all a
+        single, generic type, <code>Future&lt;T&gt;</code>. this is how we will
+        be treating it for the rest of the article.
+      </p>
+    </main>
+
+    <!--#include virtual="/includes/footer.html" -->
+  </body>
+</html>

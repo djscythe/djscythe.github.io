@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-GB-oxendict">
   <head>
     <!--#include virtual="/includes/head.html" -->
-    <link rel="me" href="https://pawb.fun/@djscythe" />
-    <title>djscythe's website</title>
+    <title>about | djscythe</title>
   </head>
   <body>
     <!--#include virtual="/includes/header.html" -->
 
     <main>
-      <h1>blog</h1>
+      <h1>about me</h1>
 
       <p>no articles.</p>
     </main>

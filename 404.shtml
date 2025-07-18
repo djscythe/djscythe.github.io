@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-GB-oxendict">
   <head>
     <!--#include virtual="/includes/head.html" -->
-    <title>error 404: page not found</title>
+    <title>page not found | djscythe</title>
   </head>
   <body>
     <!--#include virtual="/includes/header.html" -->
